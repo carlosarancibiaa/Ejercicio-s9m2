@@ -8,15 +8,24 @@
 function mostrarDiv2(){
     document.getElementById("text2").style.display = "block";
 }
+document.getElementById("text1").onmouseover = mostrarDiv2
+
 function ocultarDiv2(){
     document.getElementById("text2").style.display = "none";
 }
+document.getElementById("text1").onmouseout = ocultarDiv2
+
 function agrandar(){
     document.getElementById("img").style.width = "100%";
 }
+document.getElementById('caja2').onclick = agrandar
+
 function encoger(){
     document.getElementById("img").style.width = "20%";
 }
+document.getElementById('caja2').onmouseout = encoger
+
 function agrandarLetra(){
     document.getElementById("caja3").style.fontSize = "30px"
 }
+document.getElementById('caja3').ondblclick = agrandarLetra
